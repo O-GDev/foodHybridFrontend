@@ -13,14 +13,14 @@ const AuthLanding: React.FC = () => {
       <div className="flex flex-col gap-[10px] items-center ">
         <p className="text-[#6E6E6E]">New User?</p>
         <Button className="w-full" asChild>
-          <Link to="/partner/register?stage=1">Create an account</Link>
+          <Link to="/partner/auth/register?stage=1">Create an account</Link>
         </Button>
       </div>
       <div className="flex flex-col gap-[10px] items-center">
         <p className="text-[#6E6E6E]">Existing User?</p>
 
         <Button className="w-full" asChild>
-          <Link to="/partner/login">Sign in</Link>
+          <Link to="/partner/auth/login">Sign in</Link>
         </Button>
       </div>
     </div>
