@@ -20,10 +20,10 @@ const Register: React.FC = () => {
 
   useEffect(() => {
     if (currentStage === 2 && !userData.first_name) {
-      navigate("/partner/register?stage=1");
+      navigate("/partner/auth/register?stage=1");
     }
     if (currentStage > 2 && !userData.email) {
-      navigate("/partner/register?stage=1");
+      navigate("/partner/auth/register?stage=1");
     }
   }, [userData, navigate, currentStage]);
 
