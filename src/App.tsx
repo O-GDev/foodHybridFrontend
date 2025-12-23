@@ -69,8 +69,8 @@ import SavedVendors from "./pages/PartnerDashboard/Profile/SavedVendors";
 const App = () => {
   return (
     <BrowserRouter>
-      {/* <Routes>
-        <Route element={<SiteLayout />}>
+       <Routes>
+      {/*  <Route element={<SiteLayout />}>
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
