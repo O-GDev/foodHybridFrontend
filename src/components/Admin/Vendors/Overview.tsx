@@ -1,9 +1,9 @@
 import { HiUsers } from "react-icons/hi2";
 import { FaCirclePlus } from "react-icons/fa6";
 import { BsArrowUpRightCircleFill } from "react-icons/bs";
-// import { Vendors } from "@/types/admin";
+import { Vendors } from "@/types/admin";
 
-export default function Overview(  ) {
+export default function Overview(_data : Vendors) {
   
   const statsData = [
     {
