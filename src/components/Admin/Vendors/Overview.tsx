@@ -3,7 +3,7 @@ import { FaCirclePlus } from "react-icons/fa6";
 import { BsArrowUpRightCircleFill } from "react-icons/bs";
 import { Vendors } from "@/types/admin";
 
-export default function Overview( data: Vendors ) {
+export default function Overview(  ) {
   
   const statsData = [
     {
