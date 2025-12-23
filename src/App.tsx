@@ -108,7 +108,7 @@ const App = () => {
           <Route path="delivery-form" element={<DriversDeliveryForm />} />
         </Route> */}
 
-        <Route path="/admin/login" element={<AdminLogin />} />
+        <Route path="/" element={<AdminLogin />} />
 
         <Route path="/admin" element={<AdminLayout />}>
           <Route path="overview" element={<Overview />} />
