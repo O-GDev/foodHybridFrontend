@@ -69,7 +69,7 @@ import SavedVendors from "./pages/PartnerDashboard/Profile/SavedVendors";
 const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
+      {/* <Routes>
         <Route element={<SiteLayout />}>
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -79,18 +79,18 @@ const App = () => {
             element={<RewardLoyaltyProgram />}
           />
           <Route path="/faq" element={<FAQ />} />
-        </Route>
+        </Route> */}
 
-        <Route path="/" element={<LandingPage />} />
+        {/* <Route path="/" element={<LandingPage />} />
 
         <Route path="/partner" element={<AuthLayout />}>
           <Route index element={<AuthLanding />} />
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
           <Route path="forgot-password" element={<ForgotPassword />} />
-        </Route>
+        </Route> */}
 
-        <Route path="/retail-shop" element={<DeliveryLayout />}>
+        {/* <Route path="/retail-shop" element={<DeliveryLayout />}>
           <Route path="login" element={<VendorLogin />} />
           <Route path="register" element={<VendorRegister />} />
         </Route>
@@ -101,12 +101,12 @@ const App = () => {
             <Route path="transactions" element={<RetailShopTransactions />} />
             <Route path="remittance" element={<Remittance />} />
           </Route>
-        </Route>
+        </Route> */}
 
         {/* Drivers Routes - No Authentication Required */}
-        <Route path="/drivers">
+        {/* <Route path="/drivers">
           <Route path="delivery-form" element={<DriversDeliveryForm />} />
-        </Route>
+        </Route> */}
 
         <Route path="/admin/login" element={<AdminLogin />} />
 
