@@ -3,22 +3,22 @@ import { motion } from "framer-motion";
 import pattern from "@/assets/images/patterns.webp";
 
 // Animation config
-const slideIn = {
-  initial: { opacity: 0, x: -80 },
-  whileInView: {
-    opacity: 1,
-    x: 0,
-    transition: { duration: 0.6, delay: 0.2, ease: "easeOut" },
-  },
-};
+// const slideIn = {
+//   initial: { opacity: 0, x: -80 },
+//   whileInView: {
+//     opacity: 1,
+//     x: 0,
+//     transition: { duration: 0.6, delay: 0.2, ease: "easeOut" },
+//   },
+// };
 
-const fadeIn = {
-  initial: { opacity: 0 },
-  whileInView: {
-    opacity: 1,
-    transition: { duration: 0.6, delay: 0.4, ease: "easeOut" },
-  },
-};
+// const fadeIn = {
+//   initial: { opacity: 0 },
+//   whileInView: {
+//     opacity: 1,
+//     transition: { duration: 0.6, delay: 0.4, ease: "easeOut" },
+//   },
+// };
 
 const Root: React.FC = () => {
   return (
@@ -29,7 +29,7 @@ const Root: React.FC = () => {
           initial="initial"
           whileInView="whileInView"
           viewport={{ once: true, amount: 0.5 }}
-          variants={slideIn}
+          // variants={slideIn}
         >
           <div>
             <h1 className="w-[70%] sm:w-full text-[20px] sm:text-[24px] lg:text-[35px] text-[#15221B] font-[600]">
@@ -42,7 +42,7 @@ const Root: React.FC = () => {
 
           <motion.p
             className="sm:text-[18px] lg:text-[24px] text-[#252525]"
-            variants={fadeIn}
+            // variants={fadeIn}
           >
             With each product carrying the taste of home, designed to meet the
             needs of Africans diaspora in the United Kingdom🇬🇧 (UK) and beyond.

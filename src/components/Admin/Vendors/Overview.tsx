@@ -3,26 +3,26 @@ import { FaCirclePlus } from "react-icons/fa6";
 import { BsArrowUpRightCircleFill } from "react-icons/bs";
 import { Vendors } from "@/types/admin";
 
-export default function Overview(_data : Vendors) {
+export default function Overview(data : Vendors) {
   
   const statsData = [
     {
       id: "total-vendors",
       label: "Total Retail Shops",
       icon: HiUsers, // People icon representing vendors
-      value: 1332 // data.total_vendors,
+      value:  data.total_vendors,
     },
     {
-      id: "todays-remittance",
+      id: "todays-purchase",
       label: "Today's Purchase",
       icon: FaCirclePlus, // Briefcase icon for remittance
-      value: "3,560,000" // data.today_remittance,
+      value: data.today_purchase,
     },
     {
-      id: "total-remittance",
+      id: "total-purchase",
       label: "Total Purchase",
       icon: BsArrowUpRightCircleFill, // Money withdraw icon for total remittance
-      value: "6,660,000,000" // data.total_remittance,
+      value: data.total_purchase,
     },
   ];
 

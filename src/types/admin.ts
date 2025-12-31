@@ -103,6 +103,8 @@ export type Vendors = {
   total_vendors: number;
   total_remittance: number;
   today_remittance: number;
+  today_purchase: number;
+  total_purchase: number;
   vendors: Vendor[];
 };
 
