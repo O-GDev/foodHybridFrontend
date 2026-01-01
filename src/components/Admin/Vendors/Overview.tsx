@@ -7,22 +7,22 @@ export default function Overview(data : Vendors) {
   
   const statsData = [
     {
-      id: "total-vendors",
+      id: "total-retail-shop",
       label: "Total Retail Shops",
       icon: HiUsers, // People icon representing vendors
-      value:  data.total_vendors,
+      value:  data.total_vendors || 0,
     },
     {
       id: "todays-purchase",
       label: "Today's Purchase",
       icon: FaCirclePlus, // Briefcase icon for remittance
-      value: data.today_purchase,
+      value: data.today_purchase || 0,
     },
     {
       id: "total-purchase",
       label: "Total Purchase",
       icon: BsArrowUpRightCircleFill, // Money withdraw icon for total remittance
-      value: data.total_purchase,
+      value: data.total_purchase || 0,
     },
   ];
 
