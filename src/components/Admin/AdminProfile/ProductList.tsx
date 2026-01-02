@@ -1,4 +1,4 @@
-import yamFlourImage from "@/assets/images/yamFlour.webp";
+// import yamFlourImage from "@/assets/images/yamFlour.webp";
 import { Link } from "react-router-dom";
 import { ShopProduct } from "@/types";
 import { cn } from "@/lib/utils";
@@ -33,7 +33,7 @@ function ProductList({ data }: Props) {
                     className="flex items-center gap-3 mr-10"
                   >
                     <img
-                      src={yamFlourImage}
+                      src={(product?.images as string[])[0]}
                       alt={product.name}
                       className="w-[48px] h-[48px] rounded object-cover"
                     />
