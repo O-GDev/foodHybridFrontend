@@ -58,7 +58,9 @@ const Login: React.FC = () => {
     resetUserData();
   }, [resetUserData]);
 
-  const { mutate, isPending } = useMutation({
+  const { 
+    // mutate
+   _ , isPending } = useMutation({
     mutationFn: (data: PartnerSigninData) => partnerSignin(data),
     onSuccess: (data) => {
       setAuth(data?.tokens as { access: string; refresh: string });
@@ -73,7 +75,9 @@ const Login: React.FC = () => {
     },
   });
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
+  function onSubmit(
+    // values: z.infer<typeof formSchema>
+  ) {
     // const data: PartnerSigninData = {
     //   username: values.usernameEmail,
     //   password: values.password,
