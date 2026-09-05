@@ -13,11 +13,11 @@ import {
 import { Loader2Icon, LockKeyhole, User, Eye, EyeOff } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useNavigate } from "react-router-dom";
-import { partnerSignin } from "@/api/apiEndpoints";
-import { PartnerSigninData } from "@/types";
-import { useMutation } from "@tanstack/react-query";
+// import { partnerSignin } from "@/api/apiEndpoints";
+// import { PartnerSigninData } from "@/types";
+// import { useMutation } from "@tanstack/react-query";
 import { toast } from "sonner";
-import useAuthStore from "@/stores/authStore";
+// import useAuthStore from "@/stores/authStore";
 import { AxiosError } from "axios";
 import usePartnerSignupStore from "@/stores/partnerSingupStore";
 
@@ -51,29 +51,30 @@ const Login: React.FC = () => {
     },
   });
   const navigate = useNavigate();
-  const { setAuth, logout } = useAuthStore();
+  // const { 
+  //   setAuth,
+  //        logout } = useAuthStore();
 
   const { resetUserData } = usePartnerSignupStore();
   useEffect(() => {
     resetUserData();
   }, [resetUserData]);
 
-  const { 
-    // mutate
-   _ , isPending } = useMutation({
-    mutationFn: (data: PartnerSigninData) => partnerSignin(data),
-    onSuccess: (data) => {
-      setAuth(data?.tokens as { access: string; refresh: string });
-      toast.success(data?.detail || "Login successful");
-      navigate("/admin/overview");
-    },
-    onError: (error: AxiosError) => {
-      const errorMessage = (error.response?.data as { detail: string }).detail;
-      logout()
-      toast.error(errorMessage);
-      console.error("Login error:", error);
-    },
-  });
+  // const { 
+  //   mutate, isPending } = useMutation({
+  //   mutationFn: (data: PartnerSigninData) => partnerSignin(data),
+  //   onSuccess: (data) => {
+  //     setAuth(data?.tokens as { access: string; refresh: string });
+  //     toast.success(data?.detail || "Login successful");
+  //     navigate("/admin/overview");
+  //   },
+  //   onError: (error: AxiosError) => {
+  //     const errorMessage = (error.response?.data as { detail: string }).detail;
+  //     logout()
+  //     toast.error(errorMessage);
+  //     console.error("Login error:", error);
+  //   },
+  // });
 
   function onSubmit(
     // values: z.infer<typeof formSchema>
