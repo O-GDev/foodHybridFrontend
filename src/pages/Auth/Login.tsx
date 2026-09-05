@@ -75,12 +75,14 @@ const Login: React.FC = () => {
   })
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    const data: PartnerSigninData = {
-      username: values.usernameEmail,
-      password: values.password,
-      user_type: "partner",
-    };
-    mutate(data)
+    // const data: PartnerSigninData = {
+    //   username: values.usernameEmail,
+    //   password: values.password,
+    //   user_type: "partner",
+    // };
+    // mutate(data)
+    
+      navigate("/partner/portfolio")
   }
 
   return (
