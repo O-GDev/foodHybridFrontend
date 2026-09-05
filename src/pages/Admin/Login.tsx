@@ -74,12 +74,14 @@ const Login: React.FC = () => {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    const data: PartnerSigninData = {
-      username: values.usernameEmail,
-      password: values.password,
-      user_type: "admin",
-    };
-    mutate(data);
+    // const data: PartnerSigninData = {
+    //   username: values.usernameEmail,
+    //   password: values.password,
+    //   user_type: "admin",
+    // };
+    // mutate(data);
+    
+      navigate("/admin/overview");
   }
 
   return (
